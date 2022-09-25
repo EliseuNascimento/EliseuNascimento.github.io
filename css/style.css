@@ -103,6 +103,7 @@
     max-width: 75%;
     margin-bottom: 10px;
 }
+/* BTN content */
 #btn-projects{
     font-weight: bold;
     font-size: 16px;
@@ -128,6 +129,7 @@
 #btn-projects:hover{
     background-color: transparent;
 }
+/* Skills contetn */
 #skills-section-title{
     border-top: 1px solid var(--border-color);
     padding-top: 20px;
@@ -153,4 +155,47 @@
 #skills-box i{
     font-size: 45px;
     margin-right: 10px;
+}
+/* Mobile */
+@media(max-width: 450px){
+    #container{
+        flex-direction: column;
+    }
+/*Bio content */
+    #bio-container{
+        min-height: auto;
+        border-right: none;
+        border-bottom: 5px solid var(--bio-border-color);
+    }
+    #bio-container h2{
+        display: none;
+    }
+    #bio-container p{
+        max-width: 60%;
+        margin: 10px auto;
+    }
+/*Other content */
+    #about-container{
+        text-align: center;
+        padding: 30px;
+    }
+    #about-container .description{
+        margin: 10px auto;
+        max-width: 100%;
+        line-height: 26px;
+    }
+/* BTN content */
+    #btn-projects{
+        margin: 20px auto;
+    }
+/* Skills content */
+    #skills-box{
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+    #skills-box i{
+        font-size: 60px;
+    }
 }
