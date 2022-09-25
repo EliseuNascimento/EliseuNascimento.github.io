@@ -46,6 +46,43 @@
 #bio-container p{
     margin-bottom: 20px;
 }
+#bio-container #wellcome-text{
+    font-weight: bold;
+}
+#social-container{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+#social-container li{
+    flex: 1 1 0;
+    max-width: 60px;
+}
+#social-container li a{
+    color: var(--main-color);
+    font-size: 30px;
+}
+#email-container{
+    display: flex;
+    justify-content: center;
+}
+#email-container ion-icon, #email-container a{
+    flex: 1 1 0;
+}
+#email-container ion-icon{
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 5px;
+    max-width: 20px;
+}
+#email-container a{
+    color: var(--main-text-color);
+    text-decoration: none;
+    max-width: 225px;
+}
 /*Other content*/
 #about-container{
     flex: 1 1 80%;
